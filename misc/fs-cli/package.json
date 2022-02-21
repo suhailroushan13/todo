@@ -1,0 +1,36 @@
+{
+  "name": "fs-cli",
+  "version": "1.0.0",
+  "description": "FS, SMS APIs, Auth",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "install": "npm i"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ip11/MAT5_CS21_Classwork.git"
+  },
+  "keywords": [
+    "Node",
+    "js",
+    "Twilio",
+    "Nodemailer"
+  ],
+  "author": "Prash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ip11/MAT5_CS21_Classwork/issues"
+  },
+  "homepage": "https://github.com/ip11/MAT5_CS21_Classwork#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "loading-cli": "^1.1.0",
+    "readline-sync": "^1.4.10",
+    "twilio": "^3.74.0"
+  },
+  "devDependencies": {
+    "colors-cli": "^1.0.28"
+  }
+}
