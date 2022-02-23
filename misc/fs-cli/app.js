@@ -6,8 +6,13 @@ import color from "colors-cli";
 //Users
 import userRegister from "./users/userRegister.js";
 import userLogin from "./users/userLogin.js";
-import forgotPassword from "./users/forgotPassword.js";
+import insertTodo from "./todos/insertTodo.js";
+import updateTodo from "./todos/updateTodo.js";
+import deleteTodo from "./todos/deleteTodo.js";
+import getTodos from "./todos/getTodos.js";
 import deleteUser from "./users/deleteUser.js";
+import forgotPassword from "./users/forgotPassword.js";
+
 async function main() {
   try {
     console.clear();
@@ -42,6 +47,18 @@ async function main() {
           break;
         case 2:
           await userLogin();
+          break;
+        case 3:
+          await getTodos();
+          break;
+        case 4:
+          await insertTodo();
+          break;
+        case 5:
+          await updateTodo();
+          break;
+        case 6:
+          await deleteTodo();
           break;
         case 7:
           await deleteUser();

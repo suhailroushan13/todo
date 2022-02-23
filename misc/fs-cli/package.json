@@ -26,6 +26,7 @@
   "homepage": "https://github.com/ip11/MAT5_CS21_Classwork#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
     "loading-cli": "^1.1.0",
     "readline-sync": "^1.4.10",
     "twilio": "^3.74.0"

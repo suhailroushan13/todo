@@ -1,49 +1,34 @@
 [
   {
-    "fname": "asfgdag",
-    "password": "asgdag",
-    "email": "asdgasd",
-    "mobile": "asgdagd",
-    "address": "gdsah"
+    "fname": "Elon",
+    "password": "$2b$12$DXOhQx1OAK1FsvqQlLIiZ.zrYJG6DHJ24i/KNCyDGhwxVTgrUJOA.",
+    "email": "elon@x.com",
+    "mobile": "+919866930529",
+    "address": "Austin",
+    "todos": []
   },
   {
-    "fname": "Adnan",
-    "password": "asdfadg",
-    "email": "asgdadg",
-    "mobile": "asdgadg",
-    "address": "asgsdag"
-  },
-  {
+    "todos": [{ "id": "j9zvcsbf3uj", "task": "Yo Man Whats up" }],
     "fname": "Adnan Ali Khan",
-    "password": "adfghjikjjnj",
-    "email": "adnan",
-    "mobile": "asdf",
-    "address": "asdgg"
+    "password": "$2b$12$.KK3SbdDOycFNSGx6Zlg0.mzW5kcjHEN5qNBFaGDUQPIRpgN6Kp7W",
+    "email": "adnantech.in@gmail.com",
+    "mobile": "+917032407568",
+    "address": "adnanali.eth"
   },
   {
+    "todos": [],
     "fname": "Adnan Ali Khan",
-    "password": {},
-    "email": "dafhahfd",
-    "mobile": "dsahfah",
-    "address": "asdhahf"
-  },
-  {
-    "fname": "Adbabakujnasdgdagasdh",
-    "password": {},
-    "email": "adnanali.",
-    "mobile": "asdgag",
-    "address": "agdshdfh"
-  },
-  {
-    "fname": "asdgagahbn jknadnlbndfhnkdl",
-    "email": "adnakldsh",
-    "mobile": "asdgsabn",
-    "address": "asga"
-  },
-  {
-    "fname": "Adnan Ali Khan",
+    "password": "$2b$12$eejDQJaiQ2Xcrji9F1aPyeXa0w8FSfWnmOfe2P6f6HrX0HA9kQiZq",
     "email": "adnanali.in@gmail.com",
     "mobile": "+918247026579",
-    "address": "adnanali.in"
+    "address": "adnanali.eth"
+  },
+  {
+    "todos": [],
+    "fname": "Adnan Ali Khan",
+    "password": "$2b$12$eejDQJaiQ2Xcrji9F1aPyeXa0w8FSfWnmOfe2P6f6HrX0HA9kQiZq",
+    "email": "adnanali.in@gmail.com",
+    "mobile": "+918247026579",
+    "address": "adnanali.eth"
   }
 ]

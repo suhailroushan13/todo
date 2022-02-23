@@ -2,6 +2,7 @@ import readlineSync from "readline-sync";
 import color from "colors-cli";
 import fs from "fs/promises";
 import bcrypt from "bcrypt";
+
 /*
     User Registration
     Req Fields : Name, Password,Email(Unique), Mobile, Address
@@ -22,25 +23,17 @@ async function userRegister() {
       "Enter Your Address : ",
     ];
     const keys = ["fname", "password", "email", "mobile", "address"];
-    const userData = {};
+    const userData = { todos: [] };
     questions.forEach((que, index) => {
       if (index == 1) {
-        let password = readlineSync.question(que, {
+        userData[keys[index]] = readlineSync.question(que, {
           hideEchoBack: true,
         });
-        let saltRounds = 10;
-        bcrypt.genSalt(saltRounds, function (err, salt) {
-          bcrypt.hash(password, salt, function (err, hash) {
-            // Store hash in your password DB.
-            userData[keys[index]] = hash;
-          });
-        });
-
-        console.log(userData[keys]);
       } else {
         userData[keys[index]] = readlineSync.question(que);
       }
     });
+
     let fileData = await fs.readFile("data/users.json");
     fileData = JSON.parse(fileData);
     let emailFound = fileData.find((user) => user.email == userData.email);
@@ -48,10 +41,11 @@ async function userRegister() {
     if (emailFound || mobileFound) {
       return console.log(color.red_bt("User Registered Already!!!"));
     }
-    console.log("This Is User Data", userData);
+    let salt = await bcrypt.genSalt(12);
+    userData.password = await bcrypt.hash(userData.password, salt);
     fileData.push(userData);
     await fs.writeFile("data/users.json", JSON.stringify(fileData));
-    console.log("User Registered Succesfully");
+    console.log("User Registered Succesfully. Go to Login.");
   } catch (error) {
     console.error(error);
   }

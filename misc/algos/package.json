@@ -1,0 +1,17 @@
+{
+  "name": "algos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prob1.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "color-cli": "^0.1.0",
+    "colors-cli": "^1.0.28"
+  }
+}

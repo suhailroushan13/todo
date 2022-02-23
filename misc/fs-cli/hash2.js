@@ -5,22 +5,19 @@ import bcrypt from 'bcrypt';
 //The higher the cost factor, the more hashing rounds are done.Increasing the cost factor by 1 doubles the necessary time.
 //The more time is necessary, the more difficult is brute-forcing.
 const plainPwd = '123456';
-bcrypt.genSalt(10, (err, salt) => {
-    if (err) {
-        throw err;
-    }
-    console.log(salt);
-    bcrypt.hash(plainPwd, salt, (err, hash) => {
-        if (err) {
-            throw err;
-        }
+bcrypt.genSalt(10)
+    .then((salt) => {
+        console.log(salt);
+        return salt;
+    })
+    .then((salt) => {
+        return bcrypt.hash(plainPwd, salt);
+    })
+    .then((hash) => {
         console.log(hash);
-    });
-});
+    })
+    .catch((err) => {
+        console.log(err);
+    })
 
-bcrypt.compare(plainPwd, "$2b$10$FUcpHJGg6R5OcLou3DkiVutPWD/G4bicqC.dxN9wEA91YnIEDpSSO", (err, result) => {
-    if (err) {
-        throw err;
-    }
-    console.log(result);
-})
+
