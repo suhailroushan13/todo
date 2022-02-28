@@ -1,10 +1,12 @@
 import fs from "fs/promises";
 import readlineSync from "readline-sync";
 import jwtTokenVerify from "../helpers/jwtTokenVerify.js";
+import decryption from "../helpers/decyption.js";
 
 async function deleteTodo() {
   try {
-    var token = readlineSync.question("Please enter your JWT Web Token Here: ");
+    var cipher_token = readlineSync.question("Please enter your Token Here: ");
+    let token = decryption(cipher_token);
     let verify = jwtTokenVerify(token);
     var fileData = await fs.readFile("data/users.json");
     fileData = JSON.parse(fileData.toString());

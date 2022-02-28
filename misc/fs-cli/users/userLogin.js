@@ -7,6 +7,7 @@ import sendSMS from "../sms.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import tokenGenerator from "../helpers/jwtTokenGenerator.js";
+import encryption from "../helpers/encryption.js";
 /*
     User Login
     Req Fields : Email, Password, Mobile, OTP
@@ -92,7 +93,8 @@ async function loginOTP() {
           fname: userData.fname,
         };
         let token = tokenGenerator(payload);
-        console.log(color.red_bbt(token));
+        let ciphertext = encryption(token);
+        console.log(color.red_bbt(ciphertext));
         return;
       }
       console.log(
@@ -138,7 +140,8 @@ async function verifyEmailPassword() {
       };
       //Generating Token using Payload
       let token = tokenGenerator(payload);
-      console.log(color.red_bbt(token));
+      let ciphertext = encryption(token);
+      console.log(color.red_bbt(ciphertext));
       return;
     }
     console.log(color.red_bt("\nInvalid Credentials!\n"));
