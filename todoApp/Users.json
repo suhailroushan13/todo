@@ -1,0 +1,38 @@
+[
+    {
+        "todos": [
+            {
+                "id": "20zlequegki",
+                "todo": "Consult a doc",
+                "deadline": "2022-03-02T11:35:09.000Z",
+                "status": false,
+                "count": 3,
+                "mobile": "+919989151967"
+            }
+        ],
+        "name": "sara",
+        "password": "$2a$10$Ab0TQdtt6R.uGXuDBM0OIO3B67wW2a0QgMgYmAjur9Jwmkw9.FCba",
+        "email": "sara@gmail.com",
+        "mobile": "+919989151967",
+        "address": "india",
+        "token": "U2FsdGVkX1+DmMrXyFIA48EGikBSltrKn7XiiTQSEmfcubuz7KepH7/iH/9HlPS1R1zgilOsC0eq63y+hdnKgi0Ogi0KTaSLYmgsspIPV5mtY5YEN9LgFTOBninSoP7035Iky5XwNCPpQHPKp7Z6he+CHEBHcDMKbga5pkwSWQi+oj8Vc1AzALyNmtmgHAdAGe1VM6Wdyw/VnTpUOff7ao3LeLVOVnkCHGDUd334I4dbfvOwirVtpEX4yfQ3AGqveB+z0/Y8gkk7EJtlUs5Hm4Z4yTFW+54uXk3VCaZHpVMzE3U+FQ1eyZpEDldqXWOc"
+    },
+    {
+        "todos": [
+            {
+                "id": "13lh45qxlpb",
+                "todo": "call dad",
+                "deadline": "2022-03-02T11:33:00.000Z",
+                "status": false,
+                "count": 3,
+                "mobile": "+919618211626"
+            }
+        ],
+        "name": "Ruqayyah",
+        "password": "$2a$10$nxmYgpK/UXEmLGtAEyGLnu4ITgu/jFGAGqoEIsWVRg/6u9RAoA17y",
+        "email": "ruqs@cs.in",
+        "mobile": "+918872736287",
+        "address": "Hyd, Ind",
+        "token": "U2FsdGVkX18LKejR4EAt6Cx1ba1xdDsnMiWcNwUwaAu4/mpaxfv5CeYANSvHWi8bhnGPyaxTmSB9+ows23eY8dZfpfvRnuEruhp12Nu7pf7RNTlb/2vlJdL/v2UY73X7OPabfdaqFri++RVhELEjGUgcRj2z2HpC6a0koZtRAZ99TR3qJkphF5UsFZFK+w9dX3S3UbIsspmekh7Mei+l5IJFN76IInFipgmk54AjNjI+OPdazmmJGx0jGuhejmIoXNqKuJnNSkZWKeY0+R9Ce+neVLuTXr+iVw3VBoarOg1hCZkGhUF5hz1PM0KCbqx+"
+    }
+]

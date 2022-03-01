@@ -1,0 +1,27 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "bcryptjs": "^2.4.3",
+    "cli-color": "^2.0.1",
+    "crypto-js": "^4.1.1",
+    "js-crypto-rsa": "^1.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "loading-cli": "^1.1.0",
+    "node-rsa": "^1.1.1",
+    "node-schedule": "^2.1.0",
+    "readline-sync": "^1.4.10",
+    "terminal-image": "^2.0.0",
+    "twilio": "^3.74.0"
+  }
+}
