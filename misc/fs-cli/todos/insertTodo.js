@@ -75,6 +75,7 @@ async function insertTodo() {
       let userInfo = fileData.find((ele) => ele.email == payload.email);
       userInfo.todos.push({ id, task, status: false, deadline, reminders });
       await fs.writeFile("data/users.json", JSON.stringify(fileData));
+      console.log("Task Added Successfully!");
       return;
     }
     throw (msg("Invalid Token, Access Denied"));

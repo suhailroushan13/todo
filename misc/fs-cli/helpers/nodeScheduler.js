@@ -9,10 +9,6 @@ async function nodeScheduler(email) {
         let userInfo = fileData.find((ele) => ele.email == email);
         console.log(userInfo);
         console.table(userInfo.todos)
-        const triggers = userInfo.todos.map(element => {
-            return element.reminders;
-        })
-        console.log(triggers);
         userInfo.todos.forEach(element => {
 
             element.reminders.forEach(ele => {
@@ -25,7 +21,7 @@ async function nodeScheduler(email) {
                         msg: `This is a Reminder to Complete your Task\n${element.task}`,
                         mobile: userInfo.mobile
                     });
-                })
+                });
 
             });
 
