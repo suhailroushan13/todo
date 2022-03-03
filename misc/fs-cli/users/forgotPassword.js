@@ -33,7 +33,9 @@ async function forgotPassword() {
         });
         let salt = await bcrypt.genSalt(12);
         userData.password = await bcrypt.hash(password, salt);
+
         fileData.push(userData);
+        console.log(fileData);
         await fs.writeFile("data/users.json", JSON.stringify(fileData));
         console.log(color.green_bt("Password Changed Succesfully!"));
         return;

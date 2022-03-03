@@ -13,9 +13,9 @@ async function getTodos() {
     var emailFound = fileData.find((ele) => ele.email == verify.email);
     if (emailFound) {
       console.log(`The Tasks of the user with email ${verify.email} are :  `);
-      emailFound.todos.forEach((element) => {
-        console.table(element);
-      });
+      // emailFound.todos.forEach((element) => {
+        // });
+          console.table(emailFound.todos);
     } else {
       console.log("Email Address Not Found");
     }

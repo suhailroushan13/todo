@@ -4,7 +4,7 @@ function jwtTokenVerify(token) {
     const decoded = jwt.verify(token, "cs21.code.in");
     return decoded;
   } catch (err) {
-    console.error(err);
+    console.error("Invalid Token");
   }
 }
 export default jwtTokenVerify;

@@ -4,10 +4,8 @@ import fs from "fs/promises";
 import loading from "loading-cli";
 import timer from "../helpers/loading.js";
 import sendSMS from "../sms.js";
-import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
-import tokenGenerator from "../helpers/jwtTokenGenerator.js";
-import encryption from "../helpers/encryption.js";
+import encryptAll from "../helpers/encryptAll.js"
 /*
     User Login
     Req Fields : Email, Password, Mobile, OTP
@@ -92,8 +90,7 @@ async function loginOTP() {
           mobile: userData.mobile,
           fname: userData.fname,
         };
-        let token = tokenGenerator(payload);
-        let ciphertext = encryption(token);
+        let ciphertext = encryptAll(token);
         console.log(color.red_bbt(ciphertext));
         return;
       }
@@ -139,8 +136,7 @@ async function verifyEmailPassword() {
         fname: userData.fname,
       };
       //Generating Token using Payload
-      let token = tokenGenerator(payload);
-      let ciphertext = encryption(token);
+      let ciphertext = encryptAll(payload);
       console.log(color.red_bbt(ciphertext));
       return;
     }
